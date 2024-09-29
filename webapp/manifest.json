@@ -2,6 +2,9 @@
   "_version": "1.58.0",
   "sap.app": {
     "id": "toya-sa-sapui5-task",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "i18n": "i18n/i18n.properties",
     "dataSources": {
       "oDataRemote": {
         "uri": "V2/Northwind/Northwind.svc/",
@@ -23,6 +26,14 @@
     "models": {
       "oData": {
         "dataSource": "oDataRemote"
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "toya-sa-sapui5-task.i18n.i18n",
+          "supportedLocales": [""],
+          "fallbackLocale": ""
+        }
       }
     }
   }
