@@ -1,0 +1,60 @@
+<mvc:View
+  controllerName="toya-sa-sapui5-task.controller.CustomerTable"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Page showHeader="false">
+    <Table
+      id="customerTable"
+      inset="false"
+      width="auto"
+      items="{oData>/Customers}">
+      <headerToolbar>
+        <OverflowToolbar>
+          <Title text="{i18n>customerTableTitle}" level="H2"/>
+          <ToolbarSpacer/>
+          <MenuButton text="{i18n>customerSortCity}" icon="sap-icon://sort">
+            <menu>
+              <Menu>
+                <MenuItem text="{i18n>customerSortAscending}" press=".sortCompanyNameAscending" />
+                <MenuItem text="{i18n>customerSortDescending}" press=".sortCompanyNameDescending" />
+              </Menu>
+            </menu>
+          </MenuButton>
+          <SearchField
+            width="50%"
+            placeholder="{i18n>customerSearchInputPlaceholder}"
+            search=".filterCompanyName"/>
+        </OverflowToolbar>
+      </headerToolbar>
+      <columns>
+        <Column id="companyName">
+          <Text text="{i18n>customerCompanyName}"/>
+        </Column>
+        <Column>
+          <Text text="{i18n>customerAddress}"/>
+        </Column>
+        <Column>
+          <Text text="{i18n>customerCity}"/>
+        </Column>
+        <Column>
+          <Text text="{i18n>customerPostalCode}"/>
+        </Column>
+        <Column>
+          <Text text="{i18n>customerPhone}"/>
+        </Column>
+      </columns>
+      <items>
+        <ColumnListItem>
+          <cells>
+            <Text text="{oData>CompanyName}"/>
+            <Text text="{oData>Address}"/>
+            <Text text="{oData>City}"/>
+            <Text text="{oData>PostalCode}"/>
+            <Text text="{oData>Phone}"/>
+          </cells>
+        </ColumnListItem>
+      </items>
+    </Table>
+  </Page>
+</mvc:View>
