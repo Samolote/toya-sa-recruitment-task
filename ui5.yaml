@@ -1,0 +1,9 @@
+specVersion: '4.0'
+metadata:
+  name: toya-sa-sapui5-task
+type: application
+framework:
+  name: OpenUI5
+  version: '1.128.0'
+  libraries:
+    - name: sap.m

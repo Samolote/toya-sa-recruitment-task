@@ -1,0 +1,8 @@
+{
+  "name": "toya-sa-sapui5-task",
+  "version": "1.0.0",
+  "description": "Recruitment task for TOYA S.A.",
+  "scripts": {
+    "start": "ui5 serve -o index.html"
+  }
+}
