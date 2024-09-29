@@ -40,6 +40,38 @@
       "viewName": "toya-sa-sapui5-task.view.App",
       "type": "XML",
       "id": "app"
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "type": "View",
+        "viewType": "XML",
+        "path": "toya-sa-sapui5-task.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "helloPanel",
+          "target": "helloPanel"
+        },
+        {
+          "pattern": "customerTable",
+          "name": "customerTable",
+          "target": "customerTable"
+        }
+      ],
+      "targets": {
+        "helloPanel": {
+          "id": "helloPanel",
+          "name": "HelloPanel"
+        },
+        "customerTable": {
+          "id": "customerTable",
+          "name": "CustomerTable"
+        }
+      }
     }
   }
 }

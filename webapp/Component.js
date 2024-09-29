@@ -16,6 +16,8 @@ sap.ui.define(
           bundleName: 'toya-sa-sapui5-task.i18n.i18n',
         });
         this.setModel(i18nModel, 'i18n');
+
+        this.getRouter().initialize();
       },
     });
   },
