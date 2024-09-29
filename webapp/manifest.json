@@ -2,5 +2,14 @@
   "_version": "1.58.0",
   "sap.app": {
     "id": "toya-sa-sapui5-task"
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.71.70",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    }
   }
 }
