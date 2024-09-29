@@ -35,6 +35,11 @@
           "fallbackLocale": ""
         }
       }
+    },
+    "rootView": {
+      "viewName": "toya-sa-sapui5-task.view.App",
+      "type": "XML",
+      "id": "app"
     }
   }
 }
