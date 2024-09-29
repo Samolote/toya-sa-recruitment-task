@@ -1,0 +1,19 @@
+<mvc:View
+	controllerName="toya-sa-sapui5-task.controller.HelloPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		title="{i18n>homePageTitle}">
+		<Panel
+			class="sapUiResponsiveMargin"
+			width="auto">
+			<content>
+				<Button
+					id="helloDialogButton"
+					icon="sap-icon://world"
+					text="{i18n>routeToDetailsButtonText}"
+					press=".redirectToCustomerTable" />
+			</content>
+		</Panel>
+	</Page>
+</mvc:View>
